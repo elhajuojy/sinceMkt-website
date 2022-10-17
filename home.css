@@ -1,6 +1,110 @@
-
+.fa-star{
+    /* background-color: yellow; */
+    color: #E99C2E;
+}
 .home-body{
     font-size: 18px;
     height: 90vh;
 }
 
+
+
+.welcome-section,.new-products-section{
+    width: 90%;
+    margin: auto auto;
+}
+.welcome-title{
+    margin-top: 15vh;
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+
+.welcome-intro >h1{
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 0.5em  ;
+}
+
+.welcome-intro>p{
+    width: 80%;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+}
+
+.welcome-img{
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+}
+.welcome-img>img{
+    width: 80%;
+}
+
+
+.new-products-title{
+    width: 100%;
+    display: grid;
+    margin: 50px 0;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+.new-products-title>.see-all-products-btn{
+    justify-self: right;
+}
+
+.orange-line{
+    margin-top: 5px;
+    height: 5px;
+    width: 100px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.new-products-body-card-discount{
+    border-radius: 7px;
+    padding: 10px;
+    background-image: url("./assets/images/features/f2.jpg");
+}
+
+.discount-circle{
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.discount-circle >p{
+    color: white;
+    margin: 10px;
+}
+.new-products-body-card-discount{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-products-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 20px;
+}
+
+@media (max-width:700px) {
+    .new-products-body{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 20px;
+    }
+        
+}
+
+.new-product-card-buy-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
