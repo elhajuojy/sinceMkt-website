@@ -8,8 +8,63 @@
 }
 
 
+/* buttons */
+.s-btn-dis-more{
+    border:1px solid   ;
+    padding: 0.6em 1.3em;
+    border-radius: 2px;
+    margin-top: 10px;
+    color: #616060;
+    
+    
+    
+}
 
-.welcome-section,.new-products-section{
+.btn-see-all{
+    border:1px solid ;
+    font-size: 1.4rem;
+    padding: 0.3em 0.6em;
+    border-radius: 2px;
+    margin-top: 10px;
+    /* color: #616060; */
+    
+}
+
+.btn-see-all:hover{
+    background-color: #616060;
+    /* border-radius: 2px; */
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+
+.s-btn-dis-more:hover{
+    background-color: #616060;
+    border-radius: 2px;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+/* View more button  */
+.View-more-btn{
+    margin-top:1em ;
+    background-color: orange;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.7em 1.7em;
+    border-radius: 2px;
+
+}
+
+.View-more-btn:hover{
+    background: none;
+    color: orange;
+    border: 1px solid  orange;
+    transition: 0.3s ease-in-out;
+}
+
+
+.welcome-section,.new-products-section,.best-selling-products-section,.from-our-blog-section{
     width: 85%;
     margin: auto auto;
 }
@@ -47,16 +102,17 @@
 }
 
 
-.new-products-title{
+.new-products-title,.best-selling-products-title,.from-our-blog-title{
     width: 100%;
     display: grid;
     margin: 50px 0;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
 }
-.new-products-title>.see-all-products-btn{
+.see-all-products-btn{
     justify-self: right;
 }
+
 
 .orange-line{
     margin-top: 5px;
@@ -100,6 +156,10 @@
     gap: 20px;
     margin-bottom: 20px;
 }
+.new-pr-crd-img{
+    width: 100%;
+    margin: auto auto;
+}
 
 @media (max-width:700px) {
     .new-products-body{
@@ -117,6 +177,11 @@
     
 }
 
+.new-pr-crd-img{
+    display: flex;
+    justify-content: center;
+}
+
 .summer-word{
 font-weight: bolder;
 font-size: 2rem;
@@ -129,3 +194,157 @@ font-size: 2rem;
     align-items: center;
 }
 
+.new-product-card-buy-price>div{
+    margin: 10px;
+}
+
+
+/* Unlimited sofa collection  styling*/
+
+
+.ulitmited-sofa-section{
+    margin-top: 60px;
+    padding: 20px;
+    background-image: url("./assets/images/features/Unlimited-sofa.png");
+    background-position: center;
+    background-size: cover ;
+    height: 50vh;
+}
+
+.ulitmited-sofa-section-title{
+    border-radius: 5px;
+    padding: 1em;
+    width: 70%;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 10;
+}
+
+.ulitmited-sofa-section-title >p,h3,div,button,.start-from{
+    color: black;
+}
+
+.ulitmited-sofa-section-title>h3{
+    margin-bottom: 0.6em;
+    font-size: 3rem;
+}
+
+.ulitmited-sofa-section-title>p{
+    font-size: 1rem;
+    line-height: 1.3;
+    opacity: 0.7;
+    margin-bottom: 0.6em;
+    width: 90%;
+}
+
+.start-from-price{
+    color: orange;
+}
+
+/* Unlimited sofa collection  styling end*/
+
+.best-selling-products-section{
+    margin-top: 3em;
+}
+
+.best-selling-cards{
+    margin-top: 4vh;
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+.best-selling-products-card-review{
+    display: flex;
+    gap: 1em;
+}
+
+
+/* from-our-blog-section */
+
+.from-our-blog-cards{
+    margin-top: 4vh;
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 20px;
+}
+
+
+.from-blog-our-blog-card{
+    display: grid;
+    gap: 5px;
+    text-align: start;
+}
+.fbo-img>img{
+    border-radius: 7px;
+}
+
+.from-blog-our-blog-card>h4{
+    font-size: 1.5rem;
+}
+
+.from-blog-our-blog-card>p{
+    font-size: 1.3rem;
+}
+
+.we-work-with-section{
+    padding-top: 30px;
+    display: grid;
+    margin: auto auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.w3-images{
+    margin: 20px;
+    /* width: 90%; */
+    display: grid;
+    align-items: center;
+    padding: 5px ;
+    gap: 20px;
+    /* background-color: #DDE0FF; */
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+.more-information-contact-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 90%;
+    margin: 100px auto;
+}
+
+.more-information-contact-section a{
+    display: block;
+    color: #616060;
+    font-size: smaller;
+    font-weight: 400;
+}
+
+
+.more-information-contact-section h5{
+    margin-bottom: 30px;
+}
+
+.hm-foot-email{
+    margin-top: 10px;
+    width: 80%;
+}
