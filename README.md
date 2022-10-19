@@ -8,7 +8,7 @@
 
 ## Preview
 
-<img src="./assets/preview/sineMKT-perview.jpg" rel="">
+<img src="https://user-images.githubusercontent.com/86893073/196641686-474b8b62-f0c2-4e07-9e02-82c8ddba50d8.jpg" rel="">
 
 ## Demo site
 
