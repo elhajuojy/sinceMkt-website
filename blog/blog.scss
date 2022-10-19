@@ -1,0 +1,141 @@
+@import 'vars';
+body{
+    background-color: $body-color;
+   
+}
+
+.blog-home{
+    height: 90vh;
+    font-size: 18px;
+}
+
+.welcome-our-blog{
+    width: 100%;
+    height: 50vh;
+    background-image: url("../assets/images/blog/our-blog-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    gap: 0;
+    align-items: center;
+    // justify-content: center;
+    div{
+        padding: 3em;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h3{
+        line-height: 2;
+        font-size: 1.6rem;
+        opacity: 0.8;
+    }
+}
+
+.sign-up-for-blog{
+    background-color: $primary-color;
+    margin-bottom:30px ;
+    width: 100%;
+    // height: 20vh;
+    padding:  3rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+    p{
+        color: white;
+        font-size: 2rem;
+        line-height: 2;
+    }
+}
+
+.last-articles-container{
+    margin: auto auto;
+    width: 88%;
+}
+
+.lst-articles-title{
+    margin-bottom:30px ;
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+
+    gap: 20px;
+    text-align: center;
+    .org-line{
+        margin-top: 5px;
+        height: 5px;
+        width: 100px;
+        background-color: $primary-color;
+        border-radius: 10px;
+    }
+    
+}
+.articles-container-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: auto auto;
+    justify-content: center;
+    justify-items: center;
+    .article-card-head{
+        grid-column: span 3;
+    }
+    .article-card{
+        img{
+            width: 100%;
+            margin: auto auto;
+            border-radius: 7px;
+        }
+    }
+    .art-title{
+        margin: 10px 0;
+        color: $heading-color;
+    }
+    .art-date,.art-discription{
+        font-size: 1.3rem;
+        
+    }
+   
+}
+
+.blog-our-tutorials{
+    padding-top: 30px;
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+    width: 90%;
+    margin: auto auto;
+
+
+  
+}
+
+.our-tr-sub-images{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    // margin: auto auto;
+    gap: 20px   ;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:790px) {
+    .articles-container-cards{
+        grid-template-columns: repeat(2,1fr);
+        .article-card-head{
+            grid-column: span 2;
+        }
+    }
+
+}
+
+@media screen and (max-width:432px) {
+    .articles-container-cards{
+        grid-template-columns: repeat(1,1fr);
+        .article-card-head{
+            grid-column: span 1;
+        }
+    }
+
+}
