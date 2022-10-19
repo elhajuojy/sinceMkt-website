@@ -1,0 +1,192 @@
+body {
+  background-color: #FCF8F8;
+}
+
+.welcome-about {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../assets/About/about imge.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  gap: 0;
+  align-items: center;
+}
+.welcome-about h1 {
+  text-align: center;
+  color: #000000;
+  line-height: 2;
+  font-size: 3rem;
+}
+.welcome-about p {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 50%;
+  margin: auto auto;
+  color: #231F20;
+}
+
+.our-mission-section {
+  width: 90%;
+  margin: auto auto;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.our-mission-section .our-mission-title {
+  align-self: center;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.our-mission-section .our-mission-title h1 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+.our-mission-section .our-mission-title p {
+  font-size: 1.2rem;
+}
+.our-mission-section .our-mission-card-3 {
+  grid-column: span 2;
+}
+
+.we-care-section {
+  width: 100%;
+  height: 30vh;
+  background-image: url("../assets/About/we-care-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3em;
+  text-align: center;
+}
+.we-care-section h1 {
+  color: #FCF8F8;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.we-care-section p {
+  font-size: 1.5rem;
+  color: #FCF8F8;
+}
+
+.contact-section {
+  padding-top: 8vh;
+  width: 90%;
+  margin: auto auto;
+}
+.contact-section h1 {
+  font-size: 3rem;
+}
+.contact-section p {
+  width: 70%;
+  font-size: 1.4rem;
+}
+.contact-section .names-cnt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+.contact-section input {
+  height: 5vh;
+}
+.contact-section input, .contact-section textarea {
+  resize: none;
+  padding: 20px;
+  border: none;
+  margin: 10px 0;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+}
+.contact-section textarea {
+  width: 100%;
+}
+.contact-section .contact-from {
+  width: 80%;
+}
+.contact-section .btn-contact-us {
+  margin-top: 1em;
+  background-color: #E99C2E;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.7em 1.7em;
+  border-radius: 5px;
+  border: 1px solid #E99C2E;
+  transition: 0.3s ease-in-out;
+}
+.contact-section .btn-contact-us:hover {
+  background-color: #FCF8F8;
+  border: 1px solid #E99C2E;
+  color: #000000;
+}
+
+.more-information-contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 90%;
+  margin: 100px auto;
+}
+
+.more-information-contact-section a {
+  display: block;
+  color: #616060;
+  font-size: smaller;
+  font-weight: 400;
+}
+
+.more-information-contact-section h5 {
+  margin-bottom: 30px;
+}
+
+.hm-foot-email {
+  margin-top: 10px;
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  .our-mission-section {
+    width: 90%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 20px;
+  }
+  .our-mission-section .our-mission-card {
+    justify-self: center;
+  }
+  .our-mission-section .our-mission-title {
+    justify-content: center;
+    align-self: center;
+    grid-column: span 1;
+    grid-row: span 1;
+    text-align: center;
+  }
+  .our-mission-section .our-mission-title h1 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+  }
+  .our-mission-section .our-mission-title p {
+    font-size: 1.2rem;
+  }
+  .our-mission-section .our-mission-card-3 {
+    grid-column: span 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .our-mission-section .we-care-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .our-mission-section .we-care-section p {
+    font-size: 1.2rem;
+    color: #FCF8F8;
+    width: 90%;
+  }
+}/*# sourceMappingURL=about.css.map */
