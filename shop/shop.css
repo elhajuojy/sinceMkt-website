@@ -1,0 +1,315 @@
+.btn-contact-us {
+  margin-top: 1em;
+  background-color: #E99C2E;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.7em 1.7em;
+  border-radius: 5px;
+  border: 1px solid #E99C2E;
+  transition: 0.3s ease-in-out;
+}
+.btn-contact-us:hover {
+  background-color: #FCF8F8;
+  border: 1px solid #E99C2E;
+  color: #000000;
+  color: #E99C2E;
+}
+
+.btn-more {
+  margin-top: 1em;
+  color: #E99C2E;
+  font-size: 1.5rem;
+  padding: 0.7em 1.7em;
+  border-radius: 5px;
+  border: 1px solid #FCF8F8;
+  transition: 0.3s ease-in-out;
+}
+.btn-more:hover {
+  border: 1px solid #E99C2E;
+  background-color: #FCF8F8;
+  border: 1px solid #E99C2E;
+}
+
+.s-btn-dis-more {
+  border: 1px solid;
+  padding: 0.6em 1.3em;
+  border-radius: 4px;
+  margin-top: 10px;
+  color: #231F20;
+  transition: 0.3s ease-in-out;
+}
+.s-btn-dis-more:hover {
+  background-color: #616060;
+  color: white;
+}
+
+.btn-see-all {
+  border: 1px solid;
+  font-size: 1.4rem;
+  padding: 0.3em 0.6em;
+  border-radius: 2px;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+.btn-see-all:hover {
+  background-color: #616060;
+  color: white;
+}
+
+body {
+  background-color: #FCF8F8;
+}
+
+.fa-star {
+  /* background-color: yellow; */
+  color: #E99C2E;
+}
+
+.home-body {
+  font-size: 18px;
+  height: 90vh;
+}
+
+/* buttons */
+.welcome-pricing {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.line-before {
+  width: 25px;
+  border-radius: 1px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.new-price {
+  color: #231F20;
+}
+
+.old-price {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #616060;
+}
+
+.welcome-shop-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* View more button  */
+.View-more-btn {
+  margin-top: 1em;
+  background-color: orange;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.7em 1.7em;
+  border-radius: 2px;
+}
+
+.View-more-btn:hover {
+  background: none;
+  color: orange;
+  border: 1px solid orange;
+  transition: 0.3s ease-in-out;
+}
+
+.welcome-shop-container, .populer-products-container, .all-products-container {
+  width: 85%;
+  margin: auto auto;
+}
+
+.welcome-title {
+  margin-top: 15vh;
+  display: grid;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.welcome-intro > h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 0.5em;
+}
+
+.welcome-intro > p {
+  width: 80%;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+}
+
+.welcome-img {
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+}
+
+.welcome-img > img {
+  width: 80%;
+}
+
+.populer-products-container {
+  padding-top: 20px;
+}
+.populer-products-container .cards-containr {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.populer-products-container .card {
+  width: 95%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto auto;
+  padding: 20px;
+  background-color: #F5EDED;
+}
+.populer-products-container .card .card-content h4, .populer-products-container .card .card-content p, .populer-products-container .card .card-content h5, .populer-products-container .card .card-content h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.populer-products-container .card h3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.populer-products-container .card-discover-more {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.all-products-container {
+  margin-top: 10vh;
+}
+
+.all-products-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all-products-title .filter-options {
+  gap: 8px;
+  display: flex;
+}
+.all-products-title .active {
+  color: #231F20;
+}
+
+.discount-circle {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.discount-circle > p {
+  color: white;
+  margin: 10px;
+}
+
+.new-products-body-card-discount {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-products-body {
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.new-pr-crd-img {
+  width: 100%;
+  margin: auto auto;
+}
+
+@media (max-width: 700px) {
+  .new-products-body {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .new-products-body-card-discount {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 200px;
+  }
+}
+.new-pr-crd-img {
+  display: flex;
+  justify-content: center;
+}
+
+.summer-word {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.new-product-card-buy-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-product-card-buy-price > div {
+  margin: 10px;
+}
+
+.discount-cover-container {
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px;
+  height: 30vh;
+  background-image: url("../assets/images/features/Unlimited-sofa.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.discount-cover-container h1 {
+  font-weight: bolder;
+  color: #231F20;
+}
+
+.best-selling-products-section {
+  margin-top: 3em;
+}
+
+.best-selling-products-title {
+  width: 90%;
+  margin: auto auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-selling-cards {
+  margin-top: 4vh;
+  display: grid;
+  justify-content: space-between;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.best-selling-products-card-review {
+  display: flex;
+  gap: 1em;
+}/*# sourceMappingURL=shop.css.map */

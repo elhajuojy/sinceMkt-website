@@ -1,0 +1,62 @@
+@import "./vars";
+.btn-contact-us{
+    margin-top:1em ;
+    background-color: $primary-color;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.7em 1.7em;
+    border-radius: 5px;
+    border: 1px solid $primary-color;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background-color: $body-color;
+        border: 1px solid $primary-color;
+        color: $heading-color;
+        color: $primary-color;
+    }
+}
+
+.btn-more{
+    margin-top:1em ;
+    color: $primary-color;
+    font-size: 1.5rem;
+    padding: 0.7em 1.7em;
+    border-radius: 5px;
+    border: 1px solid $body-color;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        border: 1px solid $primary-color;
+        background-color: $body-color;
+        border: 1px solid $primary-color;
+    }
+}
+
+.s-btn-dis-more{
+    border:1px solid ;
+    padding: 0.6em 1.3em;
+    border-radius: 4px;
+    margin-top: 10px;
+    color: $sub-heading-color;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background-color: #616060;
+        color: white;
+    }
+    
+}
+
+
+.btn-see-all{
+    border:1px solid ;
+    font-size: 1.4rem;
+    padding: 0.3em 0.6em;
+    border-radius: 2px;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background-color: #616060;
+        color: white;
+    }
+}
+
+

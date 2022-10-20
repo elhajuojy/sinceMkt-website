@@ -1,3 +1,61 @@
+.btn-contact-us {
+  margin-top: 1em;
+  background-color: #E99C2E;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.7em 1.7em;
+  border-radius: 5px;
+  border: 1px solid #E99C2E;
+  transition: 0.3s ease-in-out;
+}
+.btn-contact-us:hover {
+  background-color: #FCF8F8;
+  border: 1px solid #E99C2E;
+  color: #000000;
+  color: #E99C2E;
+}
+
+.btn-more {
+  margin-top: 1em;
+  color: #E99C2E;
+  font-size: 1.5rem;
+  padding: 0.7em 1.7em;
+  border-radius: 5px;
+  border: 1px solid #FCF8F8;
+  transition: 0.3s ease-in-out;
+}
+.btn-more:hover {
+  border: 1px solid #E99C2E;
+  background-color: #FCF8F8;
+  border: 1px solid #E99C2E;
+}
+
+.s-btn-dis-more {
+  border: 1px solid;
+  padding: 0.6em 1.3em;
+  border-radius: 4px;
+  margin-top: 10px;
+  color: #231F20;
+  transition: 0.3s ease-in-out;
+}
+.s-btn-dis-more:hover {
+  background-color: #616060;
+  color: white;
+}
+
+.btn-see-all {
+  border: 1px solid;
+  font-size: 1.4rem;
+  padding: 0.3em 0.6em;
+  border-radius: 2px;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+.btn-see-all:hover {
+  background-color: #616060;
+  color: white;
+}
+
 body {
   background-color: #FCF8F8;
 }
@@ -103,21 +161,6 @@ body {
 }
 .contact-section .contact-from {
   width: 80%;
-}
-.contact-section .btn-contact-us {
-  margin-top: 1em;
-  background-color: #E99C2E;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.7em 1.7em;
-  border-radius: 5px;
-  border: 1px solid #E99C2E;
-  transition: 0.3s ease-in-out;
-}
-.contact-section .btn-contact-us:hover {
-  background-color: #FCF8F8;
-  border: 1px solid #E99C2E;
-  color: #000000;
 }
 
 .more-information-contact-section {
