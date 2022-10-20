@@ -188,7 +188,8 @@ body {
 }
 
 .all-products-container {
-  margin-top: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 4vh;
 }
 
 .all-products-title {
@@ -312,4 +313,20 @@ body {
 .best-selling-products-card-review {
   display: flex;
   gap: 1em;
+}
+
+@media (max-width: 1200px) {
+  .welcome-shop-container, .populer-products-container, .all-products-container {
+    width: 90%;
+    margin: auto auto;
+  }
+  .populer-products-container .cards-containr {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .populer-products-container .cards-containr {
+    margin: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
 }/*# sourceMappingURL=shop.css.map */
