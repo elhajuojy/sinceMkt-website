@@ -8,8 +8,7 @@ $(document).ready(function(){
 ==================================== */
 
 
-
-
+function addnumber(a, b) {	return a +b;	}
 /*=========== TABLE OF CONTENTS ===========
 1. Scroll To Top 
 2. owl carousel

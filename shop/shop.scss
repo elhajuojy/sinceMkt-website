@@ -169,11 +169,13 @@ body{
     margin: 10px;
 }
 .new-products-body-card-discount{
+    display: none;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
+
 
 .new-products-body{
     margin: auto auto;
@@ -185,6 +187,15 @@ body{
 .new-pr-crd-img{
     width: 100%;
     margin: auto auto;
+}
+@media (min-width: 698px) {
+    .new-products-body-card-discount{
+        margin-top: 10px;
+            display: none;
+    }
+    .new-products-body{
+        margin-top: 5vh;
+    }
 }
 
 @media (max-width:700px) {
