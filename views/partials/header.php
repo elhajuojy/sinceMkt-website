@@ -11,7 +11,7 @@
 		<!-- improve seo by adding discraption and keywords  -->
 		<meta name="description" content="High Quality Functional chair with Competitive Price. Safe Trading Functional chair on Leading sineMKT Platform.">
 		<meta name="keywords" content="home,wood,best,chairs,shop,best-chair">
-        <title>SineMKT High Quality Functional chair with Competitive Price</title>
+        <title> <?=$title?> SineMKT High Quality Functional chair with Competitive Price</title>
 
         <!--font-family-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">

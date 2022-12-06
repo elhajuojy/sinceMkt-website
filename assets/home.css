@@ -206,7 +206,7 @@ font-size: 2rem;
 .ulitmited-sofa-section{
     margin-top: 60px;
     padding: 20px;
-    background-image: url("./assets/images/features/Unlimited-sofa.png");
+    background-image: url("../index.php");
     background-position: center;
     background-size: cover ;
     height: 50vh;
