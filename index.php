@@ -8,7 +8,7 @@ use core\Router;
 $routes = new Router();
 
 
-
+//routing
 
 $routes->get("/", "Controller/homeController.php");
 $routes->get("/home","Controller/homeController.php");
