@@ -14,11 +14,19 @@
 
 <a href="" rel="nofollow" target="_blank">Demo</a>
 
+## La conception UML (diagramme cas d'utilisation et classe )
+
+
+<img src="/assets/usecase.png" rel="">
+<img src="/assets/class_digramme.png" rel="">
+
 ## Author
 
 <a href="https://www.linkedin.com/in/elmahdi-elhjoujy/" target="_blank">ELhjuojy elamhdi</a>
 
+
 ## License
+
 
 Copyright (c) 2022 brief 2 youcode
 

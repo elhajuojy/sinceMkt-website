@@ -10,42 +10,43 @@
 		
 		<!-- improve seo by adding discraption and keywords  -->
 		<meta name="description" content="High Quality Functional chair with Competitive Price. Safe Trading Functional chair on Leading sineMKT Platform.">
-		<meta name="keywords" content="home,wood,best,chairs,shop,">
+		<meta name="keywords" content="home,wood,best,chairs,shop,best-chair">
+        <title>SineMKT High Quality Functional chair with Competitive Price</title>
 
         <!--font-family-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
         
         <!-- title of site -->
-        <title>SineMKT High Quality Functional chair with Competitive Price</title>
 
         <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="./logo/sineMKT logo Mark.ico"/>
+		<link rel="shortcut icon" type="image/icon" href="/assets/logo/sineMKT logo Mark.ico"/>
        
         <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
 
         <!--linear icon css-->
-		<link rel="stylesheet" href="assets/css/linearicons.css">
+		<link rel="stylesheet" href="./assets/css/linearicons.css">
 
 		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="/assets/css/animate.css">
 
         <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
 		
         <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 		
 		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+		<link rel="stylesheet" href="/assets/css/bootsnav.css" >	
         
         <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
         
         <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <link rel="stylesheet" href="./about/about.css">
+        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <!-- <link rel="stylesheet" href="../../assets/home.css"> -->
+        <?=$styles?>
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,8 +62,6 @@
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-		
-		
 <!-- 	
 		<!--welcome-hero start -->
 		<header>
@@ -112,7 +111,7 @@
 				                        </a>
 				                        <ul class="dropdown-menu cart-list s-cate">
 				                            <li class="single-cart-list">
-				                                <a href="#" class="photo"><img src="assets/images/collection/arrivals1.png" class="cart-thumb" alt="image" /></a>
+				                                <a href="#" class="photo"><img src="../assets/images/collection/arrivals1.png" class="cart-thumb" alt="chair for collection  " /></a>
 				                                <div class="cart-list-txt">
 				                                	<h6><a href="#">arm <br> chair</a></h6>
 				                                	<p>1 x - <span class="price">$180.00</span></p>
@@ -122,7 +121,7 @@
 				                                </div><!--/.cart-close-->
 				                            </li><!--/.single-cart-list -->
 				                            <li class="single-cart-list">
-				                                <a href="#" class="photo"><img src="assets/images/collection/arrivals2.png" class="cart-thumb" alt="image" /></a>
+				                                <a href="#" class="photo"><img src="../assets/images/collection/arrivals2.png" class="cart-thumb" alt="image" /></a>
 				                                <div class="cart-list-txt">
 				                                	<h6><a href="#">single <br> armchair</a></h6>
 				                                	<p>1 x - <span class="price">$180.00</span></p>
@@ -132,7 +131,7 @@
 				                                </div><!--/.cart-close-->
 				                            </li><!--/.single-cart-list -->
 				                            <li class="single-cart-list">
-				                                <a href="#" class="photo"><img src="assets/images/collection/arrivals3.png" class="cart-thumb" alt="image" /></a>
+				                                <a href="#" class="photo"><img src="../assets/images/collection/arrivals3.png" class="cart-thumb" alt="image" /></a>
 				                                <div class="cart-list-txt">
 				                                	<h6><a href="#">wooden arn <br> chair</a></h6>
 				                                	<p>1 x - <span class="price">$180.00</span></p>
@@ -158,7 +157,7 @@
 				                </button>
 				                <a class="navbar-brand-sine" href="index.html">
 									<div class="logo-brand-sine">
-										<img src="./logo/sineMKT LOGO.svg" alt="">
+										<img src="../assets/logo/sineMKT LOGO.svg" alt="">
 									</div>
 								</a>
 
@@ -168,10 +167,10 @@
 				            <!-- Collect the nav links, forms, and other content for toggling -->
 				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 				                <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-				                    <li class=""><a href="./index.html">home</a></li>
-				                    <li class=""><a href="./shop.html">shop</a></li>
-				                    <li class=""><a href="./blog.html">blog</a></li>
-				                    <li class=""><a href="./about.html">About</a></li>
+				                    <li class=""><a href="/home">home</a></li>
+				                    <li class=""><a href="/shop">shop</a></li>
+				                    <li class=""><a href="/blog">blog</a></li>
+				                    <li class=""><a href="/about">About</a></li>
 				                </ul><!--/.nav -->
 				            </div><!-- /.navbar-collapse -->
 				        </div><!--/.container-->
@@ -185,135 +184,3 @@
 
 		</header>
 		<!--/.welcome-hero-->
-		<!-- welcome-hero end  -->
-
-        <!-- body of the page start  -->
-		<section class="about-body">
-            <div class="welcome-about">
-				<div class="welcome-about-title">
-					<h1>About Us</h1>
-					<p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip.</p>
-				</div>
-			</div>
-			<div class="our-mission-section">
-				<div class="our-mission-title">
-					<h1>Our Mission</h1>
-					<p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip.Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip.</p>
-				</div>
-				<div class="our-mission-card">
-					<img src="./assets/About/Rectangle 114.jpg" alt="">
-				</div>
-				<div class="our-mission-card">
-					<img src="./assets/About/Rectangle 115.jpg" alt="">
-				</div>
-				<div class="our-mission-card our-mission-card-3">
-					<img src="./assets/About/Rectangle 116.jpg" alt="">
-				</div>
-			</div>
-			<div class="we-care-section">
-				<h1>we care for what you love</h1>
-				<p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip.
-				</p>
-			</div>
-			<div class="contact-section">
-				<h1>Contact us</h1>
-				<p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod 
-				</p>
-				<div class="contact-from">
-					<div class="names-cnt">
-						<input type="text" placeholder="Name">
-						<input type="email" placeholder="Email">
-						
-					</div>
-					<div class="message-cnt">
-						<textarea name="Text1"  rows="5" placeholder="Message"></textarea>
-					</div>
-				</div>
-				<button class="btn-contact-us">Contact us</button>
-			</div>
-			<div class="more-information-contact-section">
-				<div class="more-info">
-					<h5>More info</h5>
-					<a href="./about.html">About Us</a>
-					<a href="#">Contact Us</a>
-				</div>
-				<div class="more-collections">
-					<h5>More collections</h5>
-					<a  href="#">Wooden Chair</a>
-					<a href="#">Royal Cloth Sofa</a>
-				</div>
-				<div class="more-my-accounts">
-					<h5>my accounts</h5>
-					<a href="#">My Accounts</a>
-					<a href="#">Wishlist</a>
-				</div>
-				<div class="more-news-letter">
-					<p>Subscribe to get latest news,update and information.</p>
-					<!-- <input type="text" placeholder="Enter Email Here ..."> -->
-					<div class="hm-foot-email">
-						<div class="foot-email-box">
-							<input type="text" class="form-control" placeholder="Enter Email Here....">
-						</div><!--/.foot-email-box-->
-						<div class="foot-email-subscribe">
-							<span><i class="fa fa-location-arrow"></i></span>
-						</div><!--/.foot-email-icon-->
-					</div>
-
-				</div>
-
-            </div>
-        </section>
-        <!-- body of the page end  -->
-		<!--footer start-->
-		<footer id="footer"  class="footer">
-			<div class="container">
-				<div class="hm-footer-copyright text-center">
-					<div class="footer-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>	
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
-						<a href="#"><i class="fa fa-behance"></i></a>	
-					</div>
-					<p>
-						&copy;copyright. designed and developed by <a href="https://www.themesine.com/">themesine</a>
-					</p><!--/p-->
-				</div><!--/.text-center-->
-			</div><!--/.container-->
-
-			<div id="scroll-Top">
-				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
-				</div>
-				
-			</div><!--/.scroll-Top-->
-			
-        </footer><!--/.footer-->
-		<!--footer end-->
-		
-		<!-- Include all js compiled plugins (below), or include individual files as needed -->
-
-		<script src="assets/js/jquery.js"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-
-		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
-
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
-</html>

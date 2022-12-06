@@ -1,0 +1,17 @@
+{
+    "name": "elhaj/since-mkt-website",
+    "autoload": {
+        "psr-4": {
+            "Elhaj\\SinceMktWebsite\\": "public/",
+            "core\\": "core/",
+            "Model\\": "Model/"
+        }
+    },
+    "authors": [
+        {
+            "name": "elhajuojy",
+            "email": "souirimehdi311@gmail.com"
+        }
+    ],
+    "require": {}
+}
