@@ -283,7 +283,7 @@ body {
   margin-top: 60px;
   padding: 20px;
   height: 30vh;
-  background-image: url("../assets/images/features/Unlimited-sofa.png");
+  background-image: url("/../../assets/images/features/Unlimited-sofa.png");
   background-position: center;
   background-size: cover;
   display: flex;

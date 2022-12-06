@@ -128,7 +128,7 @@ body{
     grid-column: span 2;
     grid-row: span 2;
     padding: 10px;
-    background-image: url("./assets/images/features/f2.jpg");
+    background-image: url("../assets/images/features/f2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;

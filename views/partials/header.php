@@ -155,7 +155,7 @@
 				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 				                    <i class="fa fa-bars"></i>
 				                </button>
-				                <a class="navbar-brand-sine" href="index.html">
+				                <a class="navbar-brand-sine" href="\home">
 									<div class="logo-brand-sine">
 										<img src="../assets/logo/sineMKT LOGO.svg" alt="">
 									</div>

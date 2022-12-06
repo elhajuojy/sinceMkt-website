@@ -35,7 +35,7 @@
 					</div>
 					<div class="new-product-card">
 						<div class="new-pr-crd-img">
-							<img src="assets/images/collection/arrivals2.png" alt="sofa">
+							<img src="../assets/images/collection/arrivals2.png" alt="sofa">
 						</div>
 						<p>Latest Designed Stool and Chair</p>
 						<p>

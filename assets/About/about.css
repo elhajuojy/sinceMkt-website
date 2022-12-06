@@ -63,7 +63,7 @@ body {
 .welcome-about {
   width: 100%;
   height: 50vh;
-  background-image: url("../assets/About/about imge.png");
+  background-image: url("/../../assets/About/about imge.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -112,7 +112,7 @@ body {
 .we-care-section {
   width: 100%;
   height: 30vh;
-  background-image: url("../assets/About/we-care-bg.jpg");
+  background-image: url("/../../assets/About/we-care-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3em;
