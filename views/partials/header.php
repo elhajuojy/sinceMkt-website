@@ -12,7 +12,7 @@
 		<meta name="description" content="High Quality Functional chair with Competitive Price. Safe Trading Functional chair on Leading sineMKT Platform.">
 		<meta name="keywords" content="home,wood,best,chairs,shop,best-chair">
         <title> <?=$title?> SineMKT High Quality Functional chair with Competitive Price</title>
-
+		<?=$styles?>
         <!--font-family-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
         
@@ -46,7 +46,7 @@
         <!--responsive.css-->
         <link rel="stylesheet" href="/assets/css/responsive.css">
         <!-- <link rel="stylesheet" href="../../assets/home.css"> -->
-        <?=$styles?>
+      
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -104,48 +104,56 @@
 				                	<li class="nav-setting">
 				                		<a href="#"><span class="lnr lnr-cog"></span></a>
 				                	</li><!--/.search-->
-				                    <li class="dropdown">
-				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
-				                            <span class="lnr lnr-cart"></span>
-											<span class="badge badge-bg-1">2</span>
-				                        </a>
-				                        <ul class="dropdown-menu cart-list s-cate">
-				                            <li class="single-cart-list">
-				                                <a href="#" class="photo"><img src="../assets/images/collection/arrivals1.png" class="cart-thumb" alt="chair for collection  " /></a>
-				                                <div class="cart-list-txt">
-				                                	<h6><a href="#">arm <br> chair</a></h6>
-				                                	<p>1 x - <span class="price">$180.00</span></p>
-				                                </div><!--/.cart-list-txt-->
-				                                <div class="cart-close">
-				                                	<span class="lnr lnr-cross"></span>
-				                                </div><!--/.cart-close-->
-				                            </li><!--/.single-cart-list -->
-				                            <li class="single-cart-list">
-				                                <a href="#" class="photo"><img src="../assets/images/collection/arrivals2.png" class="cart-thumb" alt="image" /></a>
-				                                <div class="cart-list-txt">
-				                                	<h6><a href="#">single <br> armchair</a></h6>
-				                                	<p>1 x - <span class="price">$180.00</span></p>
-				                                </div><!--/.cart-list-txt-->
-				                                <div class="cart-close">
-				                                	<span class="lnr lnr-cross"></span>
-				                                </div><!--/.cart-close-->
-				                            </li><!--/.single-cart-list -->
-				                            <li class="single-cart-list">
-				                                <a href="#" class="photo"><img src="../assets/images/collection/arrivals3.png" class="cart-thumb" alt="image" /></a>
-				                                <div class="cart-list-txt">
-				                                	<h6><a href="#">wooden arn <br> chair</a></h6>
-				                                	<p>1 x - <span class="price">$180.00</span></p>
-				                                </div><!--/.cart-list-txt-->
-				                                <div class="cart-close">
-				                                	<span class="lnr lnr-cross"></span>
-				                                </div><!--/.cart-close-->
-				                            </li><!--/.single-cart-list -->
-				                            <li class="total">
-				                                <span>Total: $0.00</span>
-				                                <button class="btn-cart pull-right" onclick="window.location.href='#'">view cart</button>
-				                            </li>
-				                        </ul>
-				                    </li><!--/.dropdown-->
+				                   <?php
+
+                                        use core\func;
+
+				                    echo !func::urlIs("/login")? '
+									<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+										<span class="lnr lnr-cart"></span>
+										<span class="badge badge-bg-1">2</span>
+									</a>
+									<ul class="dropdown-menu cart-list s-cate">
+										<li class="single-cart-list">
+											<a href="#" class="photo"><img src="../assets/images/collection/arrivals1.png" class="cart-thumb" alt="chair for collection  " /></a>
+											<div class="cart-list-txt">
+												<h6><a href="#">arm <br> chair</a></h6>
+												<p>1 x - <span class="price">$180.00</span></p>
+											</div><!--/.cart-list-txt-->
+											<div class="cart-close">
+												<span class="lnr lnr-cross"></span>
+											</div><!--/.cart-close-->
+										</li><!--/.single-cart-list -->
+										<li class="single-cart-list">
+											<a href="#" class="photo"><img src="../assets/images/collection/arrivals2.png" class="cart-thumb" alt="image" /></a>
+											<div class="cart-list-txt">
+												<h6><a href="#">single <br> armchair</a></h6>
+												<p>1 x - <span class="price">$180.00</span></p>
+											</div><!--/.cart-list-txt-->
+											<div class="cart-close">
+												<span class="lnr lnr-cross"></span>
+											</div><!--/.cart-close-->
+										</li><!--/.single-cart-list -->
+										<li class="single-cart-list">
+											<a href="#" class="photo"><img src="../assets/images/collection/arrivals3.png" class="cart-thumb" alt="image" /></a>
+											<div class="cart-list-txt">
+												<h6><a href="#">wooden arn <br> chair</a></h6>
+												<p>1 x - <span class="price">$180.00</span></p>
+											</div><!--/.cart-list-txt-->
+											<div class="cart-close">
+												<span class="lnr lnr-cross"></span>
+											</div><!--/.cart-close-->
+										</li><!--/.single-cart-list -->
+										<li class="total">
+											<span>Total: $0.00</span>
+											<button class="btn-cart pull-right" onclick="window.location.href="#">view cart</button>
+										</li>
+									</ul>
+								</li>
+				                    ':"";
+				                    
+				                   ?>
 				                </ul>
 				            </div><!--/.attr-nav-->
 				            <!-- End Atribute Navigation -->

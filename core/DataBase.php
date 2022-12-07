@@ -34,13 +34,12 @@ class Database
         return $this;
     }
 
-    public  function  find(){
-        return $this->statement->fetchAll();
+    public  function  find(string $classname ){
+        return $this->statement->fetchAll(PDO::FETCH_CLASS, $classname );
     }
-    public  function findOrFail(){
+    public  function findOrFail(string $classname ){
 
-        $result = $this->find();
-
+        $result = $this->find( $classname );
         if(! $result){
             //do something
             Router::abort();
