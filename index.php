@@ -9,10 +9,11 @@ $config = require("config.php");
 $routes = new Router();
 $db = new Database($config['database']);
 
-define('db',$db);
+define('db',serialize($db));
 session_start();
 
 // 🚀🚀
+
 
 
 $routes->get("/", "Controller/homeController.php");
@@ -25,3 +26,4 @@ $routes->get("/admin","Controller/adminDashboardController.php");
 $routes->post("/login","Controller/loginController.php");
 
 $routes->run();
+
