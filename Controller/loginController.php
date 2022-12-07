@@ -18,9 +18,8 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 if($_SERVER["REQUEST_METHOD"]=="POST"){
    $password = $_POST['password'];
    $email = $_POST['email'];
-   $admin = new Admin();
+   $admin = (new Admin())->findWhere($email,$password);
    //todo the validation  for the inputs 
-   $admin = $admin->findWhere($email,$password);
    
    if(func::emptyInput($password)|| func::emptyInput($email)){
     $emailerror = "email filed is empty";
