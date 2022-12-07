@@ -15,6 +15,8 @@ if($_SERVER["REQUEST_METHOD"]=="GET"){
 
 }
 
+
+
 if($_SERVER["REQUEST_METHOD"]=="POST"){
    $password = $_POST['password'];
    $email = $_POST['email'];
@@ -26,6 +28,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $emailerror = "email filed is empty";
     $passworderror = "password filed is empty ";
    }
+   
    
    $admin = $admin->findWhere($email,$password);
 
