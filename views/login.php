@@ -1,5 +1,5 @@
-<?php include "partials/header.php"
-?>
+<?php include "partials/header.php"?>
+<?php include "partials/nav.php" ?>
 <!-- welcome-hero end  -->
 <!-- body of the page start  -->
 <div class="container-form mx-auto">

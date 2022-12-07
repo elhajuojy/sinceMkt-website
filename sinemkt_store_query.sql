@@ -6,5 +6,7 @@ CREATE TABLE Admin(
     login TEXT,
     email TEXT,
     name TEXT,
-    password VARCHAR
+    password VARCHAR,
+    role TEXT
 ) ;
+
