@@ -5,6 +5,10 @@ use core\func;
 func::islogedIn("email");
 
 
+if(isset($_POST["logout"])){
+    func::logOut();
+}
+
 
 
 $styles = 

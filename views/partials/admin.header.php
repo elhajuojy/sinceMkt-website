@@ -51,7 +51,10 @@
               <a class="nav-link" href="/admin/addproduct">Add product</a>
             </li>
           </ul>
-          <a class="btn btn-primary ms-md-2" role="button" href="#">logout</a>
+        <form action="/admin" method="POST">
+          <!-- <a class="btn btn-primary ms-md-2" role="button" name="logout">logout</a> -->
+          <input type="submit" value="logout" class="btn btn-primary ms-md-2" name="logout" role="button">
+        </form>
         </div>
       </div>
     </nav>
