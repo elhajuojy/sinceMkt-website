@@ -26,9 +26,6 @@ session_start();
 $routes = new Router();
 
 
-$routes->get("/", "Controller/homeController.php");
-
-
 
 
 $routes->get("/", "Controller/homeController.php");
@@ -43,6 +40,8 @@ $routes->get("/admin","Controller/adminDashboardController.php");
 $routes->post("/admin","Controller/adminDashboardController.php");
 $routes->get("/admin/addproduct","Controller/addProductController.php"); 
 $routes->post("/admin/addproduct","Controller/addProductController.php");
+$routes->get("/admin/listproduct","Controller/ListProductController.php");
+$routes->post("/admin/listproduct","Controller/ListProductController.php");
 
 
 
