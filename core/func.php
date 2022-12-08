@@ -52,7 +52,7 @@ class func
         require_once "views/" . $path . ".php";
     }
 
-    public function imageUpload($imageRequest)
+    public static function imageUpload($imageRequest, $imagePath = "assets/images/")
     {
         global $msgError;
         $imagename  = rand(1000, 10000) . $_FILES[$imageRequest]['name'];
@@ -62,7 +62,7 @@ class func
         $strToArray = explode(".", $imagename);
         $ext        = end($strToArray);
         $ext        = strtolower($ext);
-
+        
         if (!empty($imagename) && !in_array($ext, $allowExt)) {
             $msgError = "EXT";
         }
@@ -70,7 +70,7 @@ class func
             $msgError = "size";
         }
         if (empty($msgError)) {
-            move_uploaded_file($imagetmp,  "../upload/" . $imagename);
+            move_uploaded_file($imagetmp,  $imagePath . $imagename);
             return $imagename;
         } else {
             return "fail";
