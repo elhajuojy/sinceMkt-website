@@ -10,6 +10,27 @@
 
 <img src="https://user-images.githubusercontent.com/86893073/196641686-474b8b62-f0c2-4e07-9e02-82c8ddba50d8.jpg" rel="">
 
+
+## Introduction
+
+SineMkt wants to migrate its static website to a new dynamic one 🦊
+SineMkt approached you to digitize their need to migrate their static website to a new dynamic one,
+they call on your skills as a full stack web developer to carry out this mission.
+
+## Installation
+
+### Install via Composer
+
+```bash
+> composer install
+```
+
+### run the project
+
+```bash
+> PHP -S localhost:8000
+```
+
 ## Demo site
 
 <a href="" rel="nofollow" target="_blank">Demo</a>
