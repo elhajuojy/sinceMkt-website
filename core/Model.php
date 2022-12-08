@@ -11,9 +11,9 @@ abstract class  Model {
 
     public function __construct($table)
     {
-        $this->table = trim($this->table,"Model\\");
+        $this->table =$table;
+        $this->table =  trim($this->table,"Model\\");
         $this->classname = $table;
-
     }
 
     public function findAll(){
@@ -57,7 +57,7 @@ abstract class  Model {
         return $this->db->query($sql,$params);
     }
 
-    
+
     public function update(int $id, array $data){
         $sql = "UPDATE ".$this->table." SET ";
         $i = 0;
