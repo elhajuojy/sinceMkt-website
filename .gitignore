@@ -2,3 +2,6 @@
 /.hintrc
 /vendor/
 /.idea
+/public 
+/composer.lock
+/.gitignore
