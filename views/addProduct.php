@@ -8,34 +8,24 @@
             <div class="card mb-5">
               <div class="card-body p-sm-5">
                 <h2 class="text-center mb-4">Add product</h2>
-                <form method="post">
+                <form method="post" action="/admin/addproduct">
                   <div class="mb-3">
                     <label class="form-label">image</label>
-                    <input class="form-control" type="file" />
+                    <input class="form-control" type="file" name="image" />
                   </div>
                   <!-- Start: Error Example -->
                   <div class="mb-3">
                     <input
                       class="form-control"
-                      type="email"
-                      id="email-3"
+                      type="text"
+                      id="title"
                       name="title"
                       placeholder="title"
                     />
                   </div>
                   <!-- End: Error Example -->
                   <!-- Start: Success Example -->
-                  <div class="mb-3">
-                    <!-- Start: Success Example -->
-                    <div class="mb-3">
-                      <input
-                        class="form-control"
-                        type="text"
-                        id="name-25"
-                        name="nom"
-                        placeholder="nom"
-                      />
-                    </div>
+  
                     <!-- End: Success Example -->
                     <!-- Start: Success Example -->
                     <div class="mb-3">
@@ -43,19 +33,18 @@
                         class="form-control"
                         type="text"
                         id="name-3"
-                        name="prix"
-                        placeholder="prix"
+                        name="price"
+                        placeholder="price"
                       />
                     </div>
                     <!-- End: Success Example -->
-                  </div>
                   <!-- End: Success Example -->
                   <!-- Start: Error Example -->
                   <div class="mb-3">
                     <input
                       class="form-control"
-                      type="email"
-                      id="email-2"
+                      type="text"
+                      id="description"
                       name="description"
                       placeholder="description"
                     />
