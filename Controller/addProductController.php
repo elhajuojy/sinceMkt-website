@@ -37,16 +37,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $product->__set('title', $_POST['title']);
     $product->__set('description', $_POST['description']);
     $product->__set('price', floatval($_POST['price']));
-    $product->__set('image', $imagename);
-    func::dd($product);
+    $product->__set('image', "../assets/images/" . $imagename);
+    // func::dd($product);
 
-    // $product->save([
-    //     'title' => $product->__get('title'),
-    //     'description' => $product->__get('description'),
-    //     'price' => $product->__get('price'),
-    //     'image' => $product->__get('image'),
-    // ]);
-
+    $product->save([
+        'title' => $product->__get('title'),
+        'description' => $product->__get('description'),
+        'price' => $product->__get('price'),
+        'image' => $product->__get('image'),
+    ]);
+    func::goTo("/admin/addproduct");
     // func::dd($product->findAll());
 
 }
