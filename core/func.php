@@ -41,5 +41,8 @@ class func
         session_destroy();
         self::goTo("/");
     }
+    public static function rander($path){
+        require_once "views/".$path.".php";
+    }
     
 }
