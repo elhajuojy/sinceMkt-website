@@ -10,3 +10,14 @@ CREATE TABLE Admin(
     role TEXT
 ) ;
 
+
+
+CREATE TABLE Product(  
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT ,
+    title TEXT,
+    description TEXT,
+    price FLOAT,
+    image TEXT,
+) ;
+
+SELECT * from products;
