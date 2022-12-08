@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if(func::emptyInput($_POST['title']) || func::emptyInput($_POST['description']) || func::emptyInput($_POST['price']) || func::emptyInput($imagename)){
         $msgError = "Please fill all the fields";
-        require "views/addProduct.php";
+        require "views/ProductAdd.php";
         die();
     }
     $product = new Products();
@@ -53,4 +53,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-require "views/addProduct.php";
+require "views/ProductAdd.php";
