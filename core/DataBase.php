@@ -1,6 +1,6 @@
 <?php
 namespace core;
-
+use core\Model;
 use PDO;
 use PDOException;
 
@@ -28,7 +28,7 @@ class Database
     public function query($query, $params = [])
     {
         $this->statement = $this->connection->prepare($query);
-
+        // func::dd($params);
         $this->statement->execute($params);
 
         return $this;
@@ -37,6 +37,11 @@ class Database
     public  function  find(string $classname ){
         return $this->statement->fetchAll(PDO::FETCH_CLASS, $classname );
     }
+
+    public  function  findOne(string $classname ){
+        return $this->statement->fetchObject($classname );
+    }
+
     public  function findOrFail(string $classname ){
 
         $result = $this->find( $classname );
