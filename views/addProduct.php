@@ -8,10 +8,12 @@
             <div class="card mb-5">
               <div class="card-body p-sm-5">
                 <h2 class="text-center mb-4">Add product</h2>
-                <form method="post" action="/admin/addproduct">
+                <form method="post" action="/admin/addproduct" enctype="multipart/form-data">
                   <div class="mb-3">
-                    <label class="form-label">image</label>
-                    <input class="form-control" type="file" name="image" />
+                    <label class="form-label" for="image">image</label>
+                    <!-- <input class="form-control" type="file" name="image"  id="image"/> -->
+                    <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+                    <p style="color: red;"><?=$msgError?></p>
                   </div>
                   <!-- Start: Error Example -->
                   <div class="mb-3">
@@ -22,6 +24,7 @@
                       name="title"
                       placeholder="title"
                     />
+                    <p style="color: red;"><?=$msgError?></p>
                   </div>
                   <!-- End: Error Example -->
                   <!-- Start: Success Example -->
@@ -36,6 +39,7 @@
                         name="price"
                         placeholder="price"
                       />
+                      <p style="color: red;"><?=$msgError?></p>
                     </div>
                     <!-- End: Success Example -->
                   <!-- End: Success Example -->
@@ -48,6 +52,7 @@
                       name="description"
                       placeholder="description"
                     />
+                    <p style="color: red;"><?=$msgError?></p>
                   </div>
                   <!-- End: Error Example -->
                   <div>
