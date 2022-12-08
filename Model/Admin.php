@@ -5,15 +5,17 @@ namespace Model ;
 
 
 use core\Database;
+use core\Model;
 
-class Admin{
+class Admin extends Model{
     public  int $id ;
     public string $name ;
     public string $login ;
     public string $password;
-    private  Database  $db =db;
+   
     public function __construct()
     {
+        parent::__construct(get_class($this));
     }
     
     
@@ -23,7 +25,6 @@ class Admin{
         ->find(get_class($this));
     }
 
-    
     
 
 
