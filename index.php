@@ -13,10 +13,13 @@ $db = new Database($config['database']);
 
 
 
+
+
 define('db',$db);
 session_start();
 
 // 🚀🚀
+
 
 
 
@@ -36,6 +39,7 @@ $routes->get("/blog","Controller/blogController.php");
 $routes->get("/login","Controller/loginController.php");
 $routes->get("/admin","Controller/adminDashboardController.php");
 $routes->post("/login","Controller/loginController.php");
+$routes->get("/admin/addproduct","Controller/addProductController.php");
 
 
 
