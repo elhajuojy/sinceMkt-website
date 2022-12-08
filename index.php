@@ -40,6 +40,7 @@ $routes->get("/login","Controller/loginController.php");
 $routes->get("/admin","Controller/adminDashboardController.php");
 $routes->post("/login","Controller/loginController.php");
 $routes->get("/admin/addproduct","Controller/addProductController.php");
+$routes->post("/admin/addproduct","Controller/addProductController.php");
 
 
 
