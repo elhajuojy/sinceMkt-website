@@ -32,14 +32,16 @@ $routes->get("/", "Controller/homeController.php");
 
 
 $routes->get("/", "Controller/homeController.php");
+$routes->get("/index.php", "Controller/homeController.php");
 $routes->get("/home","Controller/homeController.php");
 $routes->get("/about","Controller/aboutController.php");
 $routes->get("/shop","Controller/shopController.php");
 $routes->get("/blog","Controller/blogController.php");
 $routes->get("/login","Controller/loginController.php");
-$routes->get("/admin","Controller/adminDashboardController.php");
 $routes->post("/login","Controller/loginController.php");
-$routes->get("/admin/addproduct","Controller/addProductController.php");
+$routes->get("/admin","Controller/adminDashboardController.php");
+$routes->post("/admin","Controller/adminDashboardController.php");
+$routes->get("/admin/addproduct","Controller/addProductController.php"); 
 $routes->post("/admin/addproduct","Controller/addProductController.php");
 
 

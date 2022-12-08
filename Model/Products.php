@@ -16,6 +16,7 @@ class Products extends Model
     {
         parent::__construct(get_class($this));
     }
+
     
     public function __set($name, $value)
     {

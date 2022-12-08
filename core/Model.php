@@ -11,6 +11,7 @@ abstract class  Model {
 
     public function __construct($table)
     {
+        
         $this->table =$table;
         $this->table =  trim($this->table,"Model\\");
         $this->classname = $table;
