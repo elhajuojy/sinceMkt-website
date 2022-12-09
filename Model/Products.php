@@ -53,7 +53,7 @@ class Products extends Model
 
                         <ul class="list-inline list-inline-dotted mb-0">
                             <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
-                            <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                            <li class="list-inline-item">Add to <a href="#" data-abc="true">best selling </a></li>
                         </ul>
                     </div>
 

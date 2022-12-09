@@ -36,6 +36,10 @@ if (isset($_POST["logout"])) {
 $productList = (new Products())->findAll();
 $title = "List Product";
 
+
+
+
+
 if (isset($_GET["displaySend"])){
     require "views/ProductList.php";
     die();

@@ -28,6 +28,6 @@ $styles =
 $title = "Admin Dashboard";
 
 require "views/admindashboard.php";
-// func::rander("adminDashboard");
+// func::rander("admindashboard");
 
 

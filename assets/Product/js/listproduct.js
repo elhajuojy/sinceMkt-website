@@ -1,7 +1,5 @@
 
 function deleteUser(member_id) {
-    alert(member_id);
-    console.log(member_id);
     $.ajax({
         url: 'listproduct',
         type: 'post',
@@ -10,7 +8,8 @@ function deleteUser(member_id) {
             id: member_id
         },
         success: function(data, status) {
-            displayDataUser();
+            // displayDataUser();
+            window.location.href = "listproduct";
         }
     })
 }
@@ -24,8 +23,9 @@ function displayDataUser(){
             displaySend: displatData
         },
         success: function(data, status) {
-            $("#containerProducts").html = "";
-            $("#containerProducts").html(data);
+            // $("#containerProducts").html = "";
+            // $("#containerProducts").html(data);
+            // $("#containerProducts").html(data);
         }
     })
 

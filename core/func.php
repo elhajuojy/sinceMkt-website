@@ -49,7 +49,7 @@ class func
     
     public static function rander($path)
     {
-        require_once "views/" . $path . ".php";
+        require "./views/" . $path . ".php";
     }
 
     public static function imageUpload($imageRequest, $imagePath = "assets/images/")
