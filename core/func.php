@@ -52,6 +52,29 @@ class func
         require "./views/" . $path . ".php";
     }
 
+    public static function get($value)
+    {
+        if (isset($_GET[$value])) {
+            return $_GET[$value];
+        }
+    }
+    public static function post($value)
+    {
+        if (isset($_POST[$value])) {
+            return $_POST[$value];
+        }
+    }
+    
+    
+    public static function hash($value)
+    {
+        return password_hash($value, PASSWORD_DEFAULT);
+    }
+    public static function verify($value, $hash)
+    {
+        return password_verify($value, $hash);
+    }
+
     public static function imageUpload($imageRequest, $imagePath = "assets/images/")
     {
         global $msgError;
