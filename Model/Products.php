@@ -79,4 +79,54 @@ class Products extends Model
 
         ';
     }
+    //product card design 2
+
+    public function newProductCard():string{
+        return '<div class="new-product-card">
+        <div class="new-pr-crd-img">
+            <img src="'.$this->image.'" alt="">
+        </div>						
+        <p>'.$this->title.'</p>
+        <p>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
+        </p>
+        <div class="new-product-card-buy-price">
+            <p>'.$this->price.'</p>
+            <div>
+                <img src="../assets/images/icons/icon-shop.svg" alt="">
+            </div>
+        </div>
+        </div>';
+    }
+    public function bestSellingCard():string{
+        return '
+        <div class="best-selling-products-card">
+            <div class="best-selling-products-card-img">
+                <img src="'.$this->image.'" alt="">
+            </div>
+            <div class="best-selling-products-card-review">
+                <div class="best-selling-products-card-review-stars">
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
+                    </p>
+
+                </div>
+                <div class="best-selling-products-card-review-count">
+                    <p>(45 Review )</p>
+                </div>
+
+            </div>
+            <p>'.$this->title.'</p>
+            <p>$'.$this->price.'</p>
+        </div>
+        ';
+    }
 }

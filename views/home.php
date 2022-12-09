@@ -138,101 +138,14 @@
 						<button class="btn-see-all">See All</button>
 					</div>
 				</div>
+				// best selling card
 				<div class="best-selling-cards">
+					<?php
+						foreach($productlist as $product){
+							echo $product->bestSellingCard();
+						}
+					?>
 
-				
-				<div class="best-selling-products-card">
-					<div class="best-selling-products-card-img">
-						<img src="../assets/images/collection/arrivals6.png" alt="">
-					</div>
-					<div class="best-selling-products-card-review">
-						<div class="best-selling-products-card-review-stars">
-							<p>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-							</p>
-
-						</div>
-						<div class="best-selling-products-card-review-count">
-							<p>(45 Review )</p>
-						</div>
-						
-					</div>
-					<p>Designed Sofa</p>
-					<p>$160</p>
-				</div>
-				<div class="best-selling-products-card">
-					<div class="best-selling-products-card-img">
-						<img src="../assets/images/collection/arrivals4.png" alt="">
-					</div>
-					<div class="best-selling-products-card-review">
-						<div class="best-selling-products-card-review-stars">
-							<p>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-							</p>
-
-						</div>
-						<div class="best-selling-products-card-review-count">
-							<p>(45 Review )</p>
-						</div>
-						
-					</div>
-					<p>Designed Sofa</p>
-					<p>$160</p>
-				</div>
-				<div class="best-selling-products-card">
-					<div class="best-selling-products-card-img">
-						<img src="../assets/images/collection/arrivals7.png" alt="">
-					</div>
-					<div class="best-selling-products-card-review">
-						<div class="best-selling-products-card-review-stars">
-							<p>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-							</p>
-
-						</div>
-						<div class="best-selling-products-card-review-count">
-							<p>(45 Review )</p>
-						</div>
-						
-					</div>
-					<p>Designed Sofa</p>
-					<p>$160</p>
-				</div>
-				<div class="best-selling-products-card">
-					<div class="best-selling-products-card-img">
-						<img src="../assets/images/collection/arrivals3.png" alt="">
-					</div>
-					<div class="best-selling-products-card-review">
-						<div class="best-selling-products-card-review-stars">
-							<p>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
-							</p>
-
-						</div>
-						<div class="best-selling-products-card-review-count">
-							<p>(45 Review )</p>
-						</div>
-						
-					</div>
-					<p>Designed Sofa</p>
-					<p>$160</p>
-				</div>
 				</div>
             </div>
 			<!-- from-our-blog-section  start -->
