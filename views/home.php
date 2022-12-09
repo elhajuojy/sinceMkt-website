@@ -138,7 +138,7 @@
 						<button class="btn-see-all">See All</button>
 					</div>
 				</div>
-				// best selling card
+
 				<div class="best-selling-cards">
 					<?php
 						foreach($productlist as $product){
