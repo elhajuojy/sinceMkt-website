@@ -36,7 +36,7 @@ $router->routes([
     "/blog"=>"Controller/blogController.php",
     "/login"=>"Controller/loginController.php",
     "/admin"=>"Controller/adminDashboardController.php",
-    "/admin/addproduct"=>"Controller/addProductController.php",
+    "/admin/addproduct"=>"Controller/ProductController.php",
     "/admin/listproduct"=>"Controller/ListProductController.php",
 ]);
 
