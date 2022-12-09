@@ -69,7 +69,7 @@ class Products extends Model
 
                         <div class="text-muted">1985 reviews</div>
                        <div class="flex">
-                        <button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Update</button>
+                       <a href="/admin/addproduct?id='.$this->id.'"><button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Update</button></a>
                         <button type="button" class="btn btn-danger mt-4 text-white" onclick="deleteUser('.$this->id.')"><i class="icon-cart-add mr-2"></i> Delete</button>
                        </div>
                     </div>

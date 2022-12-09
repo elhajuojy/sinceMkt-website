@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die();
     }
     if($_POST["submit"]=="Update"){
-        func::dd($_POST["id"]);
+        // func::dd($_POST["id"]);
         $product->update($_POST["id"],[
             'title' => $product->__get('title'),
             'description' => $product->__get('description'),

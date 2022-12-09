@@ -10,9 +10,11 @@
                 <h2 class="text-center mb-4">Add product</h2>
                 <form method="post" action="/admin/addproduct" enctype="multipart/form-data">
                   <div class="mb-3">
-                    <label class="form-label" for="image">image</label>
                     <!-- <input class="form-control" type="file" name="image"  id="image"/> -->
-                    <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
+                    <label class="form-label" for="fileToUpload">image</label>
+                    <input class="form-control" type="file" name="fileToUpload" id="fileToUpload"  >
+                    <label class="form-label" for="fileToUpload"><?=$product->image?></label>
+        
                     <p style="color: red;"><?=$msgError?></p>
                   </div>
                   <!-- Start: Error Example -->
@@ -21,6 +23,7 @@
                       class="form-control"
                       type="text"
                       id="title"
+                      value="<?= $product->title ?>"
                       name="title"
                       placeholder="title"
                     />
@@ -37,6 +40,7 @@
                         type="text"
                         id="name-3"
                         name="price"
+                        value="<?= $product->price ?>"
                         placeholder="price"
                       />
                       <p style="color: red;"><?=$msgError?></p>
@@ -50,15 +54,25 @@
                       type="text"
                       id="description"
                       name="description"
+                      value="<?= $product->description ?>"
                       placeholder="description"
                     />
                     <p style="color: red;"><?=$msgError?></p>
                   </div>
+                  <div>
+                    <?php
+                      if (isset($_GET['id'])) {
+                        echo '<input type="hidden" name="id" value="'.$_GET['id'].'">';
+                      }
+                    ?>
+                  </div>
                   <!-- End: Error Example -->
                   <div>
-                    <button class="btn btn-primary d-block w-100" type="submit">
-                      Add
-                    </button>
+                    <?php
+                      isset($_GET['id']) ? $btn = "Update" : $btn = "Add";
+                    ?>
+                    <button class="btn btn-primary w-100" type="submit" name="submit" value="<?=$btn?>"><?=$btn?></button>
+                    
                   </div>
                 </form>
               </div>

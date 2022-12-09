@@ -57,14 +57,26 @@ abstract class  Model {
         }
         return $this->db->query($sql,$params);
     }
-
-
     public function update(int $id, array $data){
+
         $sql = "UPDATE ".$this->table." SET ";
         $i = 0;
         foreach ($data as $key => $value) {
-            $sql .= $key." = :".$value;  }
+            $sql .= $key." = :".$key.",";  
         }
+        $sql = trim($sql,",");
+        $params = [];
+        $sql .= " WHERE id = :id";
+        $params[':id'] = $id;
+        foreach ($data as $key => $value) {
+            $params[":".$key] = $value; 
+        }
+        // func::dd($params);
+        // func::dd($sql);
+        return $this->db->query($sql,$params);
+    }
+        
+        
 
 
 }
