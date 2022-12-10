@@ -5,6 +5,8 @@ use core\Database;
 use core\func;
 use core\Router;
 
+// func::dd($_SERVER['REQUEST_URI']);
+
 $config = require("config.php");
 $routes = new Router();
 $db = new Database($config['database']);

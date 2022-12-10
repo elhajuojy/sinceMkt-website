@@ -73,4 +73,8 @@ abstract class  Model {
         return $this->db->query($sql,$params);
     }
 
+    public function tojson(){
+        return json_encode($this);
+    }
+
 }
