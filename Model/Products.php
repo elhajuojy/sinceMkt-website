@@ -18,7 +18,6 @@ class Products extends Model
         parent::__construct(get_class($this));
     }
 
-
     public function __set($name, $value)
     {
         $this->$name = $value;
@@ -31,17 +30,17 @@ class Products extends Model
     public function productCard(): string
     {
         return '
-        <div class="card card-body '.$this->id.'">
+        <div class="card card-body '.htmlspecialchars($this->id).'">
                 <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
                     <div class="mr-2 mb-3 mb-lg-0">
 
-                        <img src="' . $this->image . '" width="150" height="150" alt="">
+                        <img src="' . htmlspecialchars($this->image) . '" width="150" height="150" alt="">
 
                     </div>
 
                     <div class="media-body">
                         <h6 class="media-title font-weight-semibold">
-                            <a href="#" data-abc="true">' . $this->title . '</a>
+                            <a href="#" data-abc="true">' . htmlspecialchars($this->title) . '</a>
                         </h6>
 
                         <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
@@ -49,7 +48,7 @@ class Products extends Model
                             <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Mobiles</a></li>
                         </ul>
 
-                        <p class="mb-3">' . $this->description . '</p>
+                        <p class="mb-3">' . htmlspecialchars($this->description) . '</p>
 
                         <ul class="list-inline list-inline-dotted mb-0">
                             <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
@@ -58,7 +57,7 @@ class Products extends Model
                     </div>
 
                     <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-                        <h3 class="mb-0 font-weight-semibold">$' . $this->price . '</h3>
+                        <h3 class="mb-0 font-weight-semibold">$' .htmlspecialchars( $this->price) . '</h3>
                         <div>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -69,7 +68,7 @@ class Products extends Model
 
                         <div class="text-muted">1985 reviews</div>
                        <div class="flex">
-                       <a href="/admin/addproduct?id='.$this->id.'"><button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Update</button></a>
+                       <a href="/admin/addproduct?id='.htmlspecialchars($this->id).'"><button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Update</button></a>
                         <button type="button" class="btn btn-danger mt-4 text-white" onclick="deleteUser('.$this->id.')"><i class="icon-cart-add mr-2"></i> Delete</button>
                        </div>
                     </div>
@@ -84,9 +83,9 @@ class Products extends Model
     public function newProductCard():string{
         return '<div class="new-product-card">
         <div class="new-pr-crd-img">
-            <img src="'.$this->image.'" alt="">
+            <img src="'.htmlspecialchars($this->image).'" alt="">
         </div>						
-        <p>'.$this->title.'</p>
+        <p>'.htmlspecialchars($this->title).'</p>
         <p>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
@@ -95,18 +94,19 @@ class Products extends Model
             <span class="spacial-feature-icon"><i class="fa fa-star"></i></span>
         </p>
         <div class="new-product-card-buy-price">
-            <p>'.$this->price.'</p>
+            <p>'.htmlspecialchars($this->price).'</p>
             <div>
                 <img src="../assets/images/icons/icon-shop.svg" alt="">
             </div>
         </div>
         </div>';
     }
+    //product card design 3
     public function bestSellingCard():string{
         return '
         <div class="best-selling-products-card">
             <div class="best-selling-products-card-img">
-                <img src="'.$this->image.'" alt="">
+                <img src="'.htmlspecialchars($this->image).'" alt="">
             </div>
             <div class="best-selling-products-card-review">
                 <div class="best-selling-products-card-review-stars">
@@ -124,8 +124,8 @@ class Products extends Model
                 </div>
 
             </div>
-            <p>'.$this->title.'</p>
-            <p>$'.$this->price.'</p>
+            <p>'.htmlspecialchars($this->title).'</p>
+            <p>$'.htmlspecialchars($this->price).'</p>
         </div>
         ';
     }

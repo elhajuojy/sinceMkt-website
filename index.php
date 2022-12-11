@@ -5,27 +5,18 @@ use core\Database;
 use core\func;
 use core\Router;
 
+//func::dd($_SERVER['REQUEST_URI']);
+
 $config = require("config.php");
 $routes = new Router();
 $db = new Database($config['database']);
-
-
-
-
-
-
 
 define('db',$db);
 session_start();
 
 // 🚀🚀
 
-
-
-
 $router = new Router();
-
-
 
 $router->routes([
     "/"=>"Controller/homeController.php",
@@ -38,6 +29,7 @@ $router->routes([
     "/admin"=>"Controller/adminDashboardController.php",
     "/admin/addproduct"=>"Controller/ProductController.php",
     "/admin/listproduct"=>"Controller/ListProductController.php",
+    
 ]);
 
 
