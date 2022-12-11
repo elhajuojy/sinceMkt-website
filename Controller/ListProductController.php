@@ -34,7 +34,11 @@ if (isset($_POST["logout"])) {
 }
 
 $productList = (new Products())->findAll();
+
+
 $title = "List Product";
+
+
 
 
 
